@@ -38,11 +38,13 @@ public class SimpleCalc
                   break;
       case '-':   result = num1 - num2;
                   break;
-      case '/':   result = num1 / num2;
+      case '/':   result = num1 / (float) num2;
                   break;
       case '*':   result = num1 * num2;
                   break;
       default:    result = 0;
+                  System.err.println("Invalid Operator: " + operator);
+                  System.exit(0);
                   break;
     }
     System.out.println(num1 + " " + operator + " " + num2 + " = " + result);
