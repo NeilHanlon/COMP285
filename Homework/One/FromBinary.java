@@ -16,8 +16,15 @@ public class FromBinary
         input = keyboard.next();
 
         for (int i = 0; i < input.length(); ++i)
-        {
-            inputChar[i] = Character.toString(input.charAt(i));
+        {   
+            try
+            {
+                inputChar[i] = Character.toString(input.charAt(i));
+            } catch (ArrayIndexOutOfBoundsException e)
+            {
+                System.err.println("Binary string is longer than a nibble");
+                System.exit( 2 );
+            }
         }
 
         try
