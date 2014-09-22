@@ -18,10 +18,12 @@ public class Infestation
         System.out.print("Enter the total estimated number of roaches in your house: ");
         estimatedRoaches = keyboard.nextInt();
 
-        if(houseVolume <= 0){
+        if(houseVolume <= 0)
+        {
             throw new IllegalArgumentException("House Volume must be positive.");
         }
-        if(estimatedRoaches <= 0){
+        if(estimatedRoaches <= 0)
+        {
             throw new IllegalArgumentException("Roaches must be positive.");
         }
 
