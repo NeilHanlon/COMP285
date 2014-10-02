@@ -14,6 +14,8 @@ public class Palindrome
     public static void main(String[] args)
     {
         long input;
+
+        System.out.println("Input an integer to check if it is a Palindrome: ");
         try(Scanner keyboard = new Scanner(System.in))
         {
             input = keyboard.nextLong();
@@ -37,11 +39,7 @@ public class Palindrome
     private boolean isPalindrome(){
         String num = Long.toString(this.number);
         String reverse = new StringBuilder(num).reverse().toString();
-        if(num.equals(reverse))
-        {
-            return true;
-        }
-        return false;
+        return (num.equals(reverse)) ? true : false;
     }
 
 }
