@@ -1,3 +1,5 @@
+package com.neilhanlon.comp285;
+
 import java.util.Scanner;
 import java.util.List;
 import java.util.InputMismatchException;
@@ -68,32 +70,7 @@ public class Rhombus
 
     public static void main(String[] args)
     {
-        Rhombus noside = new Rhombus();
-        System.out.println(noside.getSides());
 
-        Rhombus square = new Rhombus(2);
-        System.out.println(square.getSides());  
-
-        Rhombus rect = new Rhombus(1,2,2,1);
-        System.out.println(rect.getSides());
-
-        Rhombus rect2 = new Rhombus(2,1,1,2);
-        System.out.println(rect2.getSides());
-
-        Rhombus rect3 = new Rhombus(2,3,3,2);
-        System.out.println(rect3.getSides());
-
-        if(rect.equals(rect2)){
-            System.out.println("Rectangles are equal.");
-        }
-        if(rect.equals(rect3))
-        {
-            System.out.println("Something is wrong.");
-        }
-        else
-        {
-            System.out.println("Nope... that's right.");
-        }
     }
 }
 
